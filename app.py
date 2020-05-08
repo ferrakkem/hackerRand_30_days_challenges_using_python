@@ -13,4 +13,18 @@ def multiples_each(n):
         result = n*i
         print(f'{n} x {i} = {result}')
 
-multiples_each(2)
+#multiples_each(2)
+
+'''
+Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. 
+You are given scores. Store them in a list and find the score of the runner-up.
+'''
+
+def runner_up():
+    n = int(input())
+    arr = map(int, input().split())
+    arr_set = set(arr)
+    arr_list = list(arr_set)
+    arr_list.sort(reverse=True)
+    print(arr_list[1])
+runner_up()
